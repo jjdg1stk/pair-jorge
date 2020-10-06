@@ -1,0 +1,27 @@
+{
+  "name": "pair-jorge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "closures.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LagunaISW/pair-jorge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LagunaISW/pair-jorge/issues"
+  },
+  "homepage": "https://github.com/LagunaISW/pair-jorge#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
