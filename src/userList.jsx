@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
-import useUserList from '../useUserList'
+import useUserList from './useUserList'
 const UserList = () => {
-    const data = useUserList()
+    const { data, hello } = useUserList()
+    console.log(data);
+    hello("Jorge")
     return (
         <div>
-            {data && data.length > 0 ?
-                data.map(el =>
+            {!data.loading ?
+                data.data.map(el =>
                 <p key={el.name}>{el.name} | {el.email} | {el.age}</p>    
                     )
-            : null}
+            : <span>Loading</span>}
         </div>
     )
 }

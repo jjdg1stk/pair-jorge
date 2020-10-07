@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import userService from "../userService";
 import TestHooks from "./testHooks";
 import UserList from "./userList";
-
+import useUserList from "./useUserList";
 
 const intitialState = {name: "Jorge"}
 
@@ -20,6 +20,7 @@ const reducer = (initialState, action) => {
 
 const App = () => {
   const [user, dispatch] = useReducer(reducer, intitialState);
+  const [query, setQuery] = useState();
 
   useEffect(() => {
     dispatch({ type: 'update', payload: {name: "Margarito"} })
